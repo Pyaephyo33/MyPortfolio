@@ -58,6 +58,46 @@
 <script setup>
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/vue/24/outline'
+import { provide, ref } from "vue";
+
+const educations = ref([
+  {
+    id: 1,
+    title: 'University of Greenwich',
+    subtitle: 'B.SC (Hons) In Computing - First Class',
+    year: '2022 - 2023',
+  },
+  {
+    id: 2,
+    title: 'NCC Education',
+    subtitle: 'Diploma - L5 Diploma in Business Information System',
+    year: '2021 - 2022',
+  },
+  {
+    id: 3,
+    title: 'NCC Education',
+    subtitle: 'Diploma - L4 Diploma in Business Information System',
+    year: '2019 - 2020',
+  },
+  {
+    id: 4,
+    title: 'Dagon University',
+    subtitle: 'Major - Physics',
+    year: 'First Year',
+  },
+  {
+    id: 5,
+    title: 'TTC',
+    subtitle: 'Practising High School of Yangon Uni of Education',
+    year: '2019',
+  },
+])
+
+
+provide('educations', educations)
+
+
+
 </script>
 
 <style scoped>
