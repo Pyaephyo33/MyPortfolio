@@ -1,6 +1,4 @@
 <template>
-
-
     <div class="bg-zinc-300 shadow min-h-full xl:p-[250px] lg:p-[200px] md:p-[150px]">
         <div class="container mx-auto sm:px-6 lg:px-8 p-4 sm:p-6">
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
