@@ -20,6 +20,15 @@
                     <h4 class="text-md">{{ education.year }}</h4>
                 </div>
             </div>
+
+            <h1 class="text-3xl font-bold md:my-8">Other Certificate</h1>
+            <div v-for="certificate in certificate" :key="certificate.id" class="card w-full bg-base-100 shadow-xl my-3 hover:bg-green-600 hover:text-white">
+                <div class="card-body">
+                    <h2 class="card-title text-2xl">{{ certificate.title }}</h2>
+                    <h3 class="text-lg">{{ certificate.subtitle }}</h3>
+                    <h4 class="text-md">{{ certificate.year }}</h4>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -29,6 +38,7 @@ import { ref, inject } from 'vue';
 import { useRouter } from 'vue-router';
 
 const educations = inject('educations')
+const certificate = inject('certificate')
 const router = useRouter()
 
 

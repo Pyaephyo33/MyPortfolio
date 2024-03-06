@@ -94,6 +94,16 @@ const educations = ref([
 ])
 
 
+const certificate = ref([
+  {
+    id: 1,
+    title: 'Fairway Technology',
+    subtitle: 'Professional Web Development',
+    year: 'Feb 2023 - March 2023',
+  }
+])
+
+
 const experiences = ref([
   {
     id: 1,
@@ -117,14 +127,14 @@ const projects = ref([
   {
     id: 1,
     title: 'Hotel Room Bookings',
-    description: '',
+    description: 'Smooth high transaction used in both managing and orgnization the system. Main target audience in traveller and agents to cooperate with hotels.',
     technologies: 'PHP, Laravel, TailwindCSS, DaisyUI, JavaScript, PgSQL and other npm & composer Packages'
   },
   {
     id: 2,
     title: 'Invoice',
-    description: '',
-    technologies: 'Laravel, Vue'
+    description: 'Similar voucher slip system using with Laravel',
+    technologies: 'Laravel, Vue, Inertia JS'
   },
   {
     id: 3,
@@ -138,7 +148,8 @@ const projects = ref([
 
 provide('educations', educations)
 provide('experiences', experiences)
-
+provide('projects', projects)
+provide('certificate', certificate)
 
 </script>
 
